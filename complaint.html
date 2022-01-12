@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="dist/style.min.css">
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <!--navbar section-->
+  <nav class="navbar navbar-expand-lg " id="mainnav">
+    <div class="container">
+      <a class="navbar-brand pl-1" href="#">WebApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars burgar"></i>
+      </button>
+
+      <div class="collapse navbar-collapse px-lg-0  px-4 py-lg-0  py-3" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active fadEffect">
+            <a class="nav-link" href="index.html" target="_blank">Home</a>
+          </li>
+          <li class="nav-item dropdown position-static ">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              company <i class="fas fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu companymenu megamenu" aria-labelledby="navbarDropdown">
+              <div class="menu-inner scrollable-menu">
+                <div class="row">
+                  <div class="col-lg-6  col-md-6  col-sm-6 col-12">
+                    <span class="dropdown-header text-uppercase">Classic</span>
+                    <a class="dropdown-item" href="#">html</a>
+                    <a class="dropdown-item" href="#">css3</a>
+                    <a class="dropdown-item" href="#">Reactjs</a>
+                    <a class="dropdown-item" href="#">Angular</a>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6  col-12 ">
+                    <span class="dropdown-header text-uppercase">services</span>
+                    <a class="dropdown-item" href="#">nodejs</a>
+                    <a class="dropdown-item" href="#">.net framework</a>
+                    <a class="dropdown-item" href="#">Phython</a>
+                    <a class="dropdown-item" href="#">javascript</a>
+                    <a class="dropdown-item" href="#">Djengo</a>
+                    <a class="dropdown-item" href="#">Laravel</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </li>
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              services <i class="fas fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu servicesmenu megamenu" aria-labelledby="navbarDropdown">
+              <div class="menu-inner scrollable-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <a class="dropdown-item" href="#">nodejs</a>
+                    <a class="dropdown-item" href="#">.net framework</a>
+                    <a class="dropdown-item" href="#">Phython</a>
+                    <a class="dropdown-item" href="#">javascript</a>
+                    <a class="dropdown-item" href="#">Djengo</a>
+                    <a class="dropdown-item" href="#">Laravel</a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <a class="dropdown-item" href="#">html</a>
+                    <a class="dropdown-item" href="#">css3</a>
+                    <a class="dropdown-item" href="#">Reactjs</a>
+                    <a class="dropdown-item" href="#">Angular</a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <a class="dropdown-item" href="#">html</a>
+                    <a class="dropdown-item" href="#">css3</a>
+                    <a class="dropdown-item" href="#">Reactjs</a>
+                    <a class="dropdown-item" href="#">Angular</a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <a class="dropdown-item" href="#">html</a>
+                    <a class="dropdown-item" href="#">css3</a>
+                    <a class="dropdown-item" href="#">Reactjs</a>
+                    <a class="dropdown-item" href="#">Angular</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item fadEffect">
+            <a class="nav-link" href="portfolio.html" target="_blank">portfolio</a>
+          </li>
+          <div class="button-grp mb-lg-0  mb-3">
+            <a class=" btn" href="#">contact us</a>
+          </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar section -->
+  <!-- Breadcrumb section -->
+  <section class="navigation d-flex  align-items-center">
+    <div class="container">
+      <nav aria-label="breadcrumb" style="float: right;">
+        <ol class="breadcrumb px-0 m-0">
+          <li class="breadcrumb-item text-capitalize" style="opacity: 0.5;"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active text-muted text-capitalize" aria-current="page">Contact us</li>
+        </ol>
+      </nav>
+      <div class="heading" style="clear:right;">
+        <h1 class="text-capitalize">Contact us</h1>
+      </div>
+    </div>
+  </section>
+  <!-- end breadcrumb section -->
+  <!-- form section -->
+  <section class="contactForm py-5"> 
+      <form action="#" id="submitComplaint">
+        <div class="container">
+          <div class="heading col-12 p-0 mb-5">
+            <h2 class="text-uppercase">Complaint-Details</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-12">
+              <div class="form-group">
+                <span class="text-danger mr-1">*</span><label class="form-label"
+                  for="Complaint-category">Complaint-Category</label>
+                <select class="form-control" id="Complaint-category">
+                  <option selected>Select Complaint-category</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-8 col-12">
+              <div class="form-group">
+                <span class="text-danger mr-1">*</span><label class="form-label"
+                  for="Complaint-code">Complaint-code</label>
+                <select class="form-control" id="Complaint-code">
+                  <option selected></option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="form-group">
+                <span class="text-danger mr-1">*</span><label class="form-label" for="zone">Zone</label>
+                <select class="form-control" id="zone">
+                  <option selected>Select Zone</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+              <div class="form-group">
+                <span class="text-danger mr-1">*</span><label class="form-label" for="ward">Ward</label>
+                <select class="form-control" id="ward">
+                  <option selected>Select Ward</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label" for="location">Location</label><button class="btn text-uppercase ml-2 mb-2" id="selectLocation">Select
+                  location from map</button>
+                <textarea class="form-control" id="location" rows="5"
+                  placeholder="If applicable please specify location pertaning to complaint "></textarea>
+                  <div class="row">
+                    <div class="col-lg-7 col-md-7 col-12">
+                      <p class="m-0">You can provide text up to 500 characters,system will automatically truncate further inputs.</p>
+                      <p class="m-0">special characters <>!'"`~| are not allowed</p>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-12 text-right">
+                      <span>Remaining characters 500</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label" for="description">Complaint Description</label>
+                <textarea class="form-control" id="description" rows="5"
+                  placeholder="Enter details if any.about complaint."></textarea>
+                  <div class="row">
+                    <div class="col-lg-7 col-md-7 col-12">
+                      <p class="m-0">You can provide text up to 500 characters,system will automatically truncate further inputs.</p>
+                      <p class="m-0">special characters <>!'"`~| are not allowed</p>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-12 text-right">
+                      <span>Remaining characters 500</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-12">
+              <div class="form-group">
+                <label for="photo" class="form-label">Complaint Photo</label><p>By pressing Ctrl you can upload maximum 2 photos of maximum 2 MB size.only upload .jpg .jpeg .png files.</p>
+               <input type="file" class="form-control-file" multiple/>
+               <a href="#">clear</a>
+              </div>
+            </div>
+          </div> -->
+          <div class="form-group">
+            <label for="fileChoose" class="form-label">Complaint Photo</label><span class="fileContent ml-2">By pressing Ctrl you can upload maximum 2 photos of maximum 2 MB size.only upload .jpg .jpeg .png files.</span>
+            <div>
+              <input type="file" class="" id="fileChoose" multiple accept="image/*"><a href="#" class="clearBtn" >clear</a>
+            </div>
+          </div>
+        </div>
+        <div class="personalDetails py-5 my-5">
+          <div class="container">
+            <div class="heading col-12 p-0 mb-5">
+              <h3 class="text-uppercase">Complaier's Personal Details </h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-6 col-12">
+                <div class="form-group">
+                  <span class="text-danger mr-1">*</span><label class="form-label"
+                  for="firstName">First Name</label>
+                  <input type="text" class="form-control" id="firstName"  placeholder="Enter firstName">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6 col-12">
+                <div class="form-group">
+                  <span class="text-danger mr-1">*</span><label class="form-label"
+                  for="lastName">Last Name</label>
+                  <input type="text" class="form-control" id="lastName"  placeholder="Enter LastName">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 col-sm-4 col-12">
+                <div class="form-group">
+                  <span class="text-danger mr-1">*</span><label class="form-label"
+                  for="address">Address</label>
+                  <input type="text" class="form-control" id="address"  placeholder="Enter Address">
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12">
+                <div class="form-group">
+                  <label class="form-label invisible" >Address</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-4 col-sm-4 col-12">
+                <div class="form-group">
+                  <span class="text-danger mr-1">*</span><label class="form-label"
+                  for="area">Area</label>
+                  <input type="text" class="form-control" id="area">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 col-sm-6 col-12">
+                <div class="form-group">
+                  <span class="text-danger mr-1">*</span><label class="form-label"
+                  for="mobile">Mobile</label>
+                  <input type="text" class="form-control" id="mobile"  placeholder="Enter Mobile No.">
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-6 col-12">
+                <div class="form-group">
+                  <span class="text-danger mr-1">*</span><label class="form-label"
+                  for="email">Email Address</label>
+                  <input type="text" class="form-control" id="email"  placeholder="Enter Email">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6 col-12">
+              <span class="text-danger mr-1">*</span><label class="form-label"
+              for="firstName">Answer below Question</label>
+            </div>
+            <div class="col-lg-6 col-sm-6 col-12">
+              <div class="actionarea float-right">
+                <a href="#" class="text-uppercase mr-5"><i class="fas fa-sync-alt mr-2"></i>Clear Form</a>
+                <button class="btn py-2 px-3 text-uppercase"><i class="fas fa-check-circle mr-2"></i>Submit Complaint</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+  </section>
+  <!-- end form section -->
+   <!-- footer -->
+   <!-- <section class="footer pt-5 mt-5" id="footer">
+    <div class="container">
+      <div class="news-box offset-lg-6 offset-md-4 offset-sm-2 offset-0 p-5">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Subscribe our News letter</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <a href="#" class="btn mt-0">Subscribe</a>
+        </form>
+      </div>
+      <div class="row py-5">
+        <div class="col-lg-4 col-md-6 col-12 about-footer">
+          <h2 class="text-uppercase">About company</h2>
+          <p class="mt-5">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis,
+            nihil?</p>
+          <div class="location d-flex justify-content-start align-items-center flex-wrap mb-3">
+            <i class="fa fa-map-marker-alt"></i>
+            <p class="ml-3 m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="email d-flex justify-content-start align-items-center flex-wrap mb-3">
+            <i class="fas fa-envelope"></i>
+            <p class=" ml-3 m-0">abc123@gmail.com</p>
+          </div>
+          <div class="contact d-flex justify-content-start align-items-center flex-wrap mb-3">
+            <i class="fas fa-phone-alt"></i>
+            <p class=" ml-3 m-0">+23 45789512</p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-6  col-12 footer-content">
+          <ul class="footer-nav m-0">
+            <li>Web Design</li>
+            <li>html</li>
+            <li>Web Design</li>
+            <li>css3</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+            <li>css3</li>
+            <li>Jquery</li>
+          </ul>
+          <ul class="footer-nav m-0">
+            <li>Web Design</li>
+            <li>html</li>
+            <li>Web Design</li>
+            <li>css3</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+          </ul>
+          <ul class="footer-nav m-0">
+            <li>Web Design</li>
+            <li>html</li>
+            <li>Web Design</li>
+            <li>css3</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+            <li>css3</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+          </ul>
+          <ul class="footer-nav m-0">
+            <li>Web Design</li>
+            <li>html</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column">
+        <div class="social-icons d-flex justify-content-center flex-wrap">
+          <div class="icon d-flex justify-content-center align-items-center my-2">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-pinterest-p"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-dribbble"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="copywrite my-3">
+          <p>Copyright ©
+            <script>document.write(new Date().getFullYear())</script> All rights reserved
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section> -->
+  <!-- end footer -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

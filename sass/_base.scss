@@ -1,0 +1,72 @@
+//@import 'customVariables';
+@import 'common';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top:60px;
+}
+// html{
+//     scroll-padding-top:77px;
+// }
+body{
+    font-family: $montserrat;
+    line-height: 1.6;
+    animation: fadeInAnimation ease-in-out 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.container{
+    max-width: 1420px;
+}
+a{
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+@keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+//breadcrumb section
+.navigation{
+    min-height: 200px;
+    background: url('../images/sublatte.png');
+    @include background-style;
+    position: relative;
+    .breadcrumb{
+        background: transparent !important;
+        .breadcrumb-item{
+            a{
+                color: $main-color;
+            }
+        }
+    }
+    h1{
+        font-weight: map-get($map: $font-weights, $key:'bold' );
+        position: relative;
+        display: inline-block;
+        &::after{
+            content: '';
+            width: 25px;
+            height: 3px;
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            margin-left: -12px;
+            background: #FFBD00;
+        }
+    }
+   
+}
+
+

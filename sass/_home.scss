@@ -1,0 +1,839 @@
+@import 'common';
+@import 'button';
+.navbar{
+   background-color: $customWhite;
+   color: $customBlack;
+   transition: all 0.5s ease-out;
+    .navbar-brand{
+        font: {
+            size:map-get($font-sizing,'large-size');
+            weight:map-get($map: $font-weights, $key: 'bold');
+            family:$montserrat;
+        }  
+        color: $blue;
+    }
+    .navbar-toggler{
+        outline: none !important;
+        span{
+            width:35px;
+            height: 4px;
+            display: block;
+            background-color: $customBlack;
+            margin:5px;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s all;
+        }
+            &.active span:nth-child(1){
+                transform: rotate(45deg);
+                position: absolute;
+                 top:30px;
+                right: 30px;
+            }
+            &.active span:nth-child(2){
+                display: none;
+            }
+            &.active span:nth-child(3){
+                transform: rotate(-45deg);
+                 position: absolute;
+                 top:30px;
+                 right: 30px;
+            }
+    }
+     
+    .nav-item{
+        a{
+            font: {
+                size:map-get($font-sizing,'medium-size');
+                family:$roboto-condence;
+            }
+            text-transform: capitalize;
+            margin-right: 1rem;
+            padding-right:20px;
+            color:$customBlack;
+            transition: all 0.5s linear;
+            &:hover{
+                color: $blue;
+                font-weight:map-get($map: $font-weights, $key: 'bold');
+            }
+        }
+        .active{
+            color: $blue;
+            font-weight:map-get($map: $font-weights, $key: 'bold');
+        }
+        
+    }
+    .dropdown-menu{
+        font-family:$roboto-regular;
+        background-color: #fff;
+        border: 0 solid rgba(0,0,0,.15);
+        border-radius:0.5rem;
+        z-index: 999;
+        top:65px;
+    }
+    .dropdown-item:not(:last-child) {
+        margin-bottom: 0.25rem;
+    }
+    .megamenu {
+        position: absolute;
+        float: left;
+        padding: 0.25rem;
+        a{
+            color:rgb(63, 62, 62);
+            padding-right: 0;
+        }
+    }
+    .companymenu {
+        right: 25%;
+        left: auto;
+        min-width: 30rem;
+        max-width: 30rem;
+    }
+    .servicesmenu{
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .dropdown-header{
+        font-size: 12px;
+        letter-spacing:1px;
+        padding:0.5rem 1rem;
+    }
+    .menu-inner{
+        padding: 0.75rem;
+    }
+    .dropdown-item{
+        padding: 0.5rem 1rem;
+        font-family:$roboto-regular !important;
+        &:hover{
+            background-color: #fbfcff;
+        }
+    }
+    .button-grp{
+        a{
+            @include btnGroup($main-color);
+            margin: 0;
+            @include themebackground-font-color($main-color:true);
+        }
+    }
+    .icon-rotates {
+        transition: all 0.3s linear;
+      }  
+      .dropdown.show .icon-rotates {
+        transform: rotate(180deg);
+      }
+
+      @media only screen and (max-width:991px){
+          .companymenu{
+            min-width: 100%;
+        }
+        .collapsing,.show,.navbar .show{
+            position: absolute !important;
+            z-index: 9999;
+            width: 100%;
+            top: 74px;
+            left:0px;
+            background-color: #fbfcff;
+            transition: all 0.3s linear;
+        }
+        .dropdown{
+            position: relative!important;
+            top: 0px;
+            margin-left: 0px!important;
+            width: 100%;
+        }
+        .scrollable-menu{
+            height:300px;
+            overflow-y:auto;
+            overflow-x: hidden;
+        }
+         .dropdown-menu{
+            position: relative!important;
+            top: 0px;
+            width: 100%;
+            border:none !important;   
+            .show{
+            transition: all 1s linear;
+       }
+        &::before{
+            position: absolute;
+            top: 0;
+            left:0px;
+            width:3px;
+            height:100%;
+            content: '';
+            background-color: rgba(33,50,91,.1);
+        }  
+    }
+ }
+
+}
+
+.slider{
+   color: $customWhite;
+   .wallpaper1{
+       background-color: $customBlack;
+       min-height:50vh;
+       @media only screen and (min-width:767px)  {
+        min-height:90vh;
+ } 
+       .left-side{
+        h1{
+            font: {
+                size:4rem;
+                weight:map-get($font-weights, "bold");
+            }       
+            span{
+                color: $blue;
+            }
+        }
+        .btn-grp{
+                        .priymary{
+                            @extend %btn-Grp;
+                            @include btnGroup($main-color);
+                            @include themebackground-font-color($main-color:true);
+                        }
+                        .secondary{
+                            @extend %btn-Grp;
+                            @include btnGroup(transparent);
+                            border: 1px solid $main-color;
+                            margin-left: 1rem;
+                            @include themebackground-font-color($main-color:false);
+                            @include btnbefore;
+                            &:hover{
+                                color:$customBlack;
+                            }
+                        }
+                    }
+                    @media only screen and (max-width:1199px) {
+                        h1{
+                            font-size: 2.5rem;
+                        }
+                 }    
+       }
+      
+}
+   .wallpaper2{
+       background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('../images/banner2.jpg') ;
+        @include background-style;
+       min-height: 50vh;
+       .content{
+           h1{
+            font-weight:  map-get($font-weights, "bold");
+           }
+           p{
+               max-width: 700px;
+               margin:auto;
+           }
+        .secondary{
+            @extend %btn-Grp;
+            @include btnGroup(transparent);
+            border: 1px solid $main-color;
+            @include themebackground-font-color($main-color:false);
+            @include btnbefore;
+            &:hover{
+                color:$customBlack;
+            }
+        }
+       }
+       @media only screen and (min-width:767px)  {
+        min-height: 90vh;
+ } 
+ }
+
+    .owl-prev {
+         @extend %owlNavigation;
+        // @include owlNavigationTop(30%);
+        left: 0px;
+        top: 50%;
+        // @media only screen and (min-width:767px){
+        //     @include owlNavigationTop(45%);
+        // }
+    }
+
+    .owl-next {
+         @extend %owlNavigation;
+        // @include owlNavigationTop(30%);
+        right:0px;
+        top: 50%;
+        // @media only screen and (min-width:767px){
+        //     @include owlNavigationTop(45%);
+        // }
+    }
+    // .owl-nav{
+    //     position: absolute;
+    //     top: 45%;
+    //     width: 100%; 
+    // }
+    .owl-nav button{
+    height: 100px;
+    text-align: center;
+    font-size: 20px !important;
+    width:35px;
+    outline: none !important;
+    }
+    &:hover{
+        .owl-nav button{
+            background:$blue!important;
+            opacity: 0.3;
+        } 
+    }
+}
+
+.about{  
+    
+        h2{
+            @include titleh2($customBlack);
+           }
+           .single-content{
+            .icon{
+                width: 130px;
+                height: 130px;
+                margin: 0 auto;
+                line-height: 130px;
+                font-size: 36px;
+                color: $customBlack;
+                transition: all 0.3s ease-in-out;
+                border: {
+                    color:$main-color;
+                    style:solid;
+                    radius:100%
+                }
+            }
+            .btn{
+                @extend %btn-Grp;
+                @include btnGroup(transparent);
+                border: 1px solid $main-color;
+                @include themebackground-font-color($main-color:true);
+                @include btnbefore;
+            }
+            p{
+              font-size: map-get($font-sizing,'regular-size');
+            }
+            span{
+                display: block;
+                color: $customBlack;
+                transition: all 0.3s ease-in-out;
+               font-size:map-get($map: $font-sizing, $key:'medium-size' );
+                font: {
+                    weight: map-get($font-weights, "bold");
+                }
+                
+            }
+            &:hover{
+                  .icon{
+                      background-color: $main-color;
+                  } 
+                  h5{
+                      color: $main-color;
+                  } 
+            }
+        }
+    
+}
+
+.services{
+        background-color: $customBlack;
+        color: $customWhite;
+        .title{
+            h2{
+                @include titleh2($customWhite);
+            }
+            p{
+                opacity: 0.5;
+            }
+        }
+      
+        a{
+            color:$customWhite;
+            opacity: 0.3;
+            font-weight: map-get($font-weights,'bold');
+        }
+        .single-services-content{
+            border: 1px solid $gray;
+            border-radius: 5px;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            overflow: hidden;
+            transition: all 1s ease-in-out;
+            &:hover{
+                border:1px solid $main-color;
+                .content-heading{
+                    top:0px;
+                }
+                p{
+                  opacity: 1;
+                  transform: translate3D(0,0,0);
+                }
+                .icon{
+                    color: $main-color;
+                }
+                a{
+                    color: $main-color;
+                    opacity: 1;
+                }
+            }
+            .content-heading{
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 85px;
+                transition: all 1s ease-in-out;
+            }
+            p{
+               opacity: 0;
+               margin-top: 50px;
+               transition-delay: 0.3s;
+               transform: translate3D(0,100px,0);
+               transition: all 1s ease-in-out;
+            }
+            .icon{
+                font-size: 48px;
+                color:$lightblack;
+                width: 80px;
+                margin: 0 auto;
+                background:$customBlack;
+                text-align: center;
+                transition: all 1s ease-in-out;
+                }
+        }
+        @media only screen and (min-width:1266px){
+            .single-services-content{
+                padding: 100px 20px;
+                        .content-heading{
+                            top:120px;
+                        }
+                    } 
+        }
+}
+ 
+.projects{
+    h2{
+        @include titleh2($customBlack)
+    } 
+    .nav-link{
+        color:$customBlack;
+        background-color:#fbfcff;
+        border: 1PX solid $main-color;
+        margin-right:1rem;
+        @media only screen and (max-width:1199px){
+            margin-top: 1rem;
+        }
+
+    } 
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+        background-color:$main-color;
+        color: $customBlack;
+    }
+    .owl-carousel{
+        .owl-nav{
+            position: absolute;
+            right: 0;
+            top:-104px;
+            button{
+                font-size: 1rem !important;
+                padding: 0.5rem 1rem !important;
+                outline: none !important;
+                background-color: #fbfcff;
+                border: 1px solid $main-color;
+                &:hover{
+                    background-color: $main-color;
+                    color: $customBlack;
+                }
+            }
+        }
+        .owl-dots{
+            button{
+                outline: none !important;
+                span{
+                    padding:0.4rem;
+                }
+            }
+        } 
+        .owl-dots button.active span{
+            background-color: $main-color !important;
+         }
+     }
+     .card{
+         cursor: pointer;
+         transition:all 1s ease-in-out; 
+         .single-img{
+            overflow: hidden;
+            position: relative;
+            img{
+                height: 200px;
+            }
+        }
+        .overlayspan{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index:99;
+            background-color: $main-color;
+            display: inline-block;
+            width: fit-content;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: map-get($font-weights,'bold');
+        }
+        .card-body{
+            span{
+                display: block;
+                font-size: 1.1rem;
+                font-weight: map-get($font-weights,'bold');
+                margin: 0.5rem 0;
+            }
+            p{
+                color:$gray;
+            }
+        }
+       
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+           transform: translateY(-200%);
+            transition:all .5s ease;
+            background-color:rgba(14, 88, 236, 0.75);
+            z-index:1;
+           font-size: 1.2rem;
+           color: $customWhite;
+          }
+          
+          &:hover{
+            .overlay{
+                transform: translateY(0%);
+            }
+            img{
+                transition:all .3s ease-in-out;
+                transform: scale(1.2);
+            }
+        }
+         
+        }
+}
+
+.counter{
+    min-height: 300px;
+    .block{
+        padding: 3rem 1.5rem;
+        // background-color:#fbfcff ;
+        transition: all 0.3s linear;
+        font: {
+            size: map-get($map: $font-sizing, $key:"medium-size" );
+            weight:map-get($map: $font-weights, $key:"bold" )
+        }
+        span{
+            color: $main-color;
+            opacity: 0.8;
+        }
+        .name{
+            font-size: 1.5rem;
+        }
+        &:hover{
+            box-shadow:0 0 10px $customWhite;
+            .icon{
+                i{
+                    transform: translateY(-10px);
+                }
+            }
+        }
+        .icon{
+            i{
+                font-size: map-get($map: $font-sizing, $key:"large-size" );
+                transition: all 0.2s linear;
+            }
+        }
+    }
+}
+
+.middle-banner{
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url('../images/middle-banner.jpg');
+   @include background-style;
+    min-height: 500px;
+    color: $customWhite;
+    a{
+        @extend %btn-Grp;
+        @include btnGroup(transparent);
+        border: 1px solid $main-color;
+        @include btnbefore;
+        @include themebackground-font-color($main-color:false);
+        &:hover{
+            color:$customBlack;
+        }
+    }
+}
+
+.testimonials{
+    h2{
+        @include titleh2($customBlack);
+       }
+       .owl-carousel{
+        .owl-dots{
+            button{
+                outline: none !important;
+                span{
+                    width: 20px;
+                    height:5px;
+                    border-radius:5px;
+                }
+            }
+        } 
+        .owl-dots button.active span{
+            background-color: $main-color !important;
+         }
+     }
+    #customers-testimonials{
+        .item{
+            text-align: center;
+            padding: 2rem;
+            transition: all 0.3s ease-in-out;
+            @media only screen and (max-width:400px)  {
+                padding: 0rem;
+          } 
+          .testimonials-content{
+            background: url('../images/testimonials.png') 15px 15px no-repeat;
+            padding:1rem 1rem 1rem 80px;
+            background-color: #fbfcff;
+            text-align: left;
+            img{
+                height:50px;
+                width: 50px;
+            }
+            p{
+                line-height: 1.5;
+                color: $gray;
+                font-size:1rem;
+                font-family: $montserrat;
+                @media only screen and (max-width:400px)  {
+                    font-size:0.8rem;
+              } 
+    
+            }
+            .testimonials-name{
+                .name{
+                    font-size:1rem;
+                    font-weight: bold;
+                    color:$blue;
+                    opacity: 0.5;
+                    span{
+                        color: $customBlack;
+                        font-weight:500;
+                    }
+                }
+            }
+        }
+    }
+    
+    
+}
+#chooseUs{
+    
+        padding: 2rem 0;
+   
+    .box{
+        background-color: $main-color;
+        position: relative;
+        padding: 1rem;
+        // text-align:center;
+        .number{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 30px;
+            width: 30px;
+            background:$customBlack;
+            color:$customWhite;
+            text-align: center;
+            display: block;
+        }
+        .content{
+            margin-top:1rem;
+           
+            span{
+                display: block;
+                // margin: 1rem 0 0 0;
+                font-weight: 900;
+            }
+            p{
+                font-size: 15px;
+                margin: 0;
+                letter-spacing:1px;
+            }
+        }
+    }
+}
+}
+
+.footer{
+    position: relative;
+    background-color: $customBlack;
+    color: $customWhite;
+    .about-footer{
+        color: $customWhite;
+        .location {
+            p{
+                max-width: 300px;
+            }
+        }
+        h2{
+            display: inline;
+            @include titleh2($customWhite);
+            color: $main-color; 
+            font-weight: bold;
+        }
+    }
+
+    .footer-content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap:1.5rem;
+        opacity: 0.3;
+        @media only screen and (max-width:991px)  {
+            grid-template-columns: repeat(2,1fr);
+            grid-gap:0;
+        }
+    }
+    .social-icons{
+        cursor: pointer;
+        .icon{
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            border: 1px solid $main-color;
+            padding: 1.2rem;
+            font-size: map-get($map: $font-sizing, $key:'regular' );
+            margin: 0 0.5rem;
+            color: $customWhite;
+            overflow: hidden;
+            transition: all 100ms ease-in-out;
+            &:hover {
+                transform: scale(1.2); 
+    }
+        }
+    }
+    .news-box{
+        background-color: $main-color;
+        padding: 2rem 1.5rem;
+        box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.8);
+        margin-top:-120px;
+        z-index: 99;
+        color: $customBlack;
+        font-weight:map-get($map: $font-weights, $key:'bold' );
+        position: relative;
+
+        &::before{
+            margin-left: -50px;
+            content: '';
+            position: absolute;
+            top: 1px;
+            left: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-bottom: 100px solid $customBlack;
+        }
+        label{
+            font-size: 1.5rem;
+        }
+        a{
+            @extend %btn-Grp;
+            @include btnGroup(transparent);
+            border: 2px solid $customBlack;
+            @include themebackground-font-color($main-color:true);
+            font-weight: bold;
+        }
+    }
+   
+}
+
+.scrollToTop{
+    position: fixed;
+    bottom: 68px;
+    right: 20px;
+    text-decoration: none;
+    background-color:$main-color;
+    height: 50px;
+    width: 50px;
+    padding:12px 19px;
+    border-radius:100%;
+    z-index: 9999;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+}
+
+#popupModal{
+   .modal-content{
+       background-color: $customBlack;
+       padding: 2rem;
+   }
+   .modal-header{
+       h5{
+        font-size:3rem;
+        color: $blue;
+        font-weight: bold;
+        margin-top: 1.2rem;
+       }
+       button{
+           position: absolute;
+           top: 15px;
+           right: 15px;
+           color: $customWhite;
+           outline: none;
+       }
+   }
+   .modal-body{
+       padding: 0;
+       p{
+           color: $main-color;
+           font-size: 1.3rem;
+       }
+   }
+   .modal-footer{
+       border: 0;
+       button{
+        @extend %btn-Grp;
+        @include btnGroup($main-color);
+        @include themebackground-font-color($main-color:true);
+       }
+   }
+}
+
+ //  navbar scroll effect
+ .navbar-fixed-top{
+    position: fixed !important;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.8);
+    width: 100%;
+    z-index: 99;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    .navbar-brand{
+        color: $customWhite !important;
+    }
+    .nav-item{
+        .nav-link{
+            color: $customWhite;
+        }
+        .active{
+            color: $blue;
+        }
+    }
+    @media only screen and (max-width:991px)  {
+        .nav-link{
+            color: $customBlack !important;
+        }
+        .navbar-toggler span{
+            background-color: $customWhite;
+        }
+ } 
+}
+ 

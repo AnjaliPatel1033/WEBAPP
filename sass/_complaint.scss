@@ -1,0 +1,67 @@
+.contactForm{
+    font-family: $roboto-regular;
+    .heading{
+        width: 100%;
+        h2{
+            display: block;
+            color: $main-color;
+            font-weight:map-get($map: $font-weights, $key: 'bold');
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width:100%;
+            height: 1px;
+            background-color:#ced4da;
+        }
+        h3{
+            color: $blue;
+            font-weight:map-get($map: $font-weights, $key: 'bold');
+        }
+    } 
+    .form-group{
+        label{
+            color: $customBlack;
+            font-weight:map-get($map: $font-weights, $key: 'bold');
+        }
+        .form-control{
+            border-radius: 5px;
+        }
+        #selectLocation{
+            background-color: $blue;
+            border-radius:4px;
+            color: $customWhite;
+            font-weight:map-get($map: $font-weights, $key: 'medium');
+        }
+        p,.fileContent{
+            color: #709c79; 
+            font-weight: normal; 
+        }
+        span{
+            color: #b4131f;
+            font-weight:map-get($map: $font-weights, $key: 'bold');
+        }
+        .clearBtn{
+            color: #b4131f;
+            text-decoration: underline !important;
+        }
+    }
+    ::placeholder{
+        color:#ced4da;
+    }
+    .personalDetails{
+        background:url('../images/funky-lines.png');
+    }
+    .actionarea{
+        // margin-bottom:100px;
+        .btn{
+            background: $blue;
+            color: $customWhite;
+            border-radius: 4px;
+            font-weight:map-get($map: $font-weights, $key: 'bold');
+        }
+        a{
+            font-weight:map-get($map: $font-weights, $key: 'bold');
+        }
+    }
+}

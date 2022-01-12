@@ -1,0 +1,34 @@
+
+@mixin background-style {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+%pseudo-block{
+    content: '';
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -12px;
+    background: #FFBD00;
+}
+
+%title-block{
+    position: relative;
+    font-weight:  map-get($font-weights, "bold");
+    &:after{
+    @extend %pseudo-block;
+    }
+}
+
+@mixin titleh2($color) {
+    color: $color;
+    @extend %title-block
+    
+}
+
+

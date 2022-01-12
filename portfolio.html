@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css">
+  <link rel="stylesheet" href="dist/style.min.css">
+</head>
+
+<body>
+  <!-- <a class="scrollToTop">
+    <i class="fas fa-chevron-up"></i>
+  </a> -->
+  <nav class="navbar navbar-expand-lg " id="mainnav">
+    <div class="container">
+      <a class="navbar-brand pl-1" href="#">WebApp</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars burgar"></i>
+      </button>
+
+      <div class="collapse navbar-collapse px-lg-0  px-4 py-lg-0  py-3" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item active fadEffect">
+            <a class="nav-link" href="index.html" target="_blank">Home</a>
+          </li>
+          <li class="nav-item dropdown position-static ">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              company <i class="fas fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu companymenu megamenu" aria-labelledby="navbarDropdown">
+              <div class="menu-inner scrollable-menu">
+                <div class="row">
+                  <div class="col-lg-6  col-md-6  col-sm-6 col-12">
+                    <span class="dropdown-header text-uppercase">Classic</span>
+                    <a class="dropdown-item" href="#">html</a>
+                    <a class="dropdown-item" href="#">css3</a>
+                    <a class="dropdown-item" href="#">Reactjs</a>
+                    <a class="dropdown-item" href="#">Angular</a>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-6  col-12 ">
+                    <span class="dropdown-header text-uppercase">services</span>
+                    <a class="dropdown-item" href="#">nodejs</a>
+                    <a class="dropdown-item" href="#">.net framework</a>
+                    <a class="dropdown-item" href="#">Phython</a>
+                    <a class="dropdown-item" href="#">javascript</a>
+                    <a class="dropdown-item" href="#">Djengo</a>
+                    <a class="dropdown-item" href="#">Laravel</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </li>
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              services <i class="fas fa-angle-down"></i>
+            </a>
+            <div class="dropdown-menu servicesmenu megamenu" aria-labelledby="navbarDropdown">
+              <div class="menu-inner scrollable-menu">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <a class="dropdown-item" href="#">nodejs</a>
+                    <a class="dropdown-item" href="#">.net framework</a>
+                    <a class="dropdown-item" href="#">Phython</a>
+                    <a class="dropdown-item" href="#">javascript</a>
+                    <a class="dropdown-item" href="#">Djengo</a>
+                    <a class="dropdown-item" href="#">Laravel</a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <a class="dropdown-item" href="#">html</a>
+                    <a class="dropdown-item" href="#">css3</a>
+                    <a class="dropdown-item" href="#">Reactjs</a>
+                    <a class="dropdown-item" href="#">Angular</a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <a class="dropdown-item" href="#">html</a>
+                    <a class="dropdown-item" href="#">css3</a>
+                    <a class="dropdown-item" href="#">Reactjs</a>
+                    <a class="dropdown-item" href="#">Angular</a>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                    <a class="dropdown-item" href="#">html</a>
+                    <a class="dropdown-item" href="#">css3</a>
+                    <a class="dropdown-item" href="#">Reactjs</a>
+                    <a class="dropdown-item" href="#">Angular</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item fadEffect">
+            <a class="nav-link" href="#" target="_blank">portfolio</a>
+          </li>
+          <div class="button-grp mb-lg-0  mb-3">
+            <a class=" btn" href="contact.html">contact us</a>
+          </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="navigation d-flex  align-items-center">
+    <div class="container">
+      <nav aria-label="breadcrumb"  style="float: right;">
+        <ol class="breadcrumb px-0">
+          <li class="breadcrumb-item" style="opacity: 0.5;"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active text-muted" aria-current="page">Portfolio</li>
+        </ol>
+      </nav>
+      <div class="heading" style="clear:right;">
+        <h1 class="text-capitalize">Image-gallary</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="image-gallary py-5 mb-5">
+    <div class="container">
+      <nav class="nav">
+        <a class="nav-link active" data-filter="*" href="#">All</a>
+        <a class="nav-link " data-filter=".photography" href="#">photo</a>
+        <a class="nav-link " data-filter=".design" href="#">Design</a>
+        <a class="nav-link" data-filter=".web-development" href="#">webdev</a>
+      </nav>
+      <div class="row" id="lightgallery" data-masonry='{"percentPosition":true}'>
+        <div class="col-lg-4 col-md-4 col-6 photography" data-src="images/images-grid/img-1.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>photography</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, voluptates.</p></div>">
+          <a href="images/images-grid/img-1-tumb.jpg">
+            　<img src="images/images-grid/img-1-tumb.jpg" class="img-fluid rounded" alt="img-1" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 design" data-src="images/images-grid/img-2.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>Design</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing.</p></div>">
+          <a href="images/images-grid/img-2.jpg">
+            　<img src="images/images-grid/img-2-thumb.png" class="img-fluid  rounded" alt="img-2" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 photography" data-src="images/images-grid/img-3.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>photography</h3><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p></div>">
+          <a href="images/images-grid/img-3.jpg">
+            　<img src="images/images-grid/img-3-tumb.jpg" class="img-fluid  rounded" alt="img-3" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 web-development" data-src="images/images-grid/img-4.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>Webdev</h3><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque a quia rem laudantium ex dignissimos!</p></div>">
+          <a href="images/images-grid/img-4.jpg">
+            　<img src="images/images-grid/img-4-thumb.jpg" class="img-fluid  rounded" alt="img-4" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 photography" data-src="images/images-grid/img-5.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>photography</h3><p>Lorem ipsum dolor sit amet consectetur.</p></div>">
+          <a href="images/images-grid/img-5.jpg">
+            　<img src="images/images-grid/img-5-thumb.jpg" class="img-fluid  rounded" alt="img-5" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 design" data-src="images/images-grid/img-6.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>Design</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p></div>">
+          <a href="images/images-grid/img-6.jpg">
+            　<img src="images/images-grid/img-6-thumb.jpg" class="img-fluid  rounded" alt="img-6" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 design" data-src="images/images-grid/img-7.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>design</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam.</p></div>">
+          <a href="images/images-grid/img-7.jpg">
+            　<img src="images/images-grid/img-7_thumb.jpg" class="img-fluid  rounded" alt="img-7" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 web-development" data-src="images/images-grid/img-8.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>web-development</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex quibusdam id reiciendis. Labore, odio non.</p></div>">
+          <a href="images/images-grid/img-8.jpg">
+            　<img src="images/images-grid/img-8-thumb.jpg" class="img-fluid  rounded" alt="img-8" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 web-development" data-src="images/images-grid/img-9.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>web-development</h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>">
+          <a href="images/images-grid/img-9.jpg">
+            　<img src="images/images-grid/img-9_thumb.jpg" class="img-fluid  rounded" alt="img-9" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 design" data-src="images/images-grid/img-10.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>design</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, laborum.</p></div>">
+          <a href="images/images-grid/img-10.jpg">
+            　<img src="images/images-grid/img-10-thumb.jpg" class="img-fluid  rounded" alt="img-10" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 web-development" data-src="images/images-grid/img-11.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>web-development</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>">
+          <a href="images/images-grid/img-11.jpg">
+            　<img src="images/images-grid/img-11-thumb.jpg" class="img-fluid  rounded" alt="img-11" /></a>
+        </div>
+        <div class="col-lg-4 col-md-4 col-6 design" data-src="images/images-grid/img-12.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>design</h3><p>Lorem ipsum dolor sit amet.</p></div>">
+          <a href="images/images-grid/img-12.jpg">
+            　<img src="images/images-grid/img-12-thumb.jpg" class="img-fluid  rounded" alt="img-12" /></a>
+        </div>
+        <!-- <div class="col-lg-4 col-md-4 col-6" data-src="images/images-grid/img-13.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h4>title</h4><p>description</p></div>">
+          <a href="#">
+            　<img src="images/images-grid/img-13.jpg" class="img-fluid  rounded" /></a>
+        </div> -->
+        <div class="col-lg-4 col-md-4 col-6 photography" data-src="images/images-grid/img-14.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>photography</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, doloribus.</p></div>">
+          <a href="images/images-grid/img-14.jpg">
+            　<img src="images/images-grid/img-14-thumb.jpg" class="img-fluid  rounded" alt="img-14" /></a>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 col-6 design" data-src="images/images-grid/img-17.jpg"
+          data-sub-html="<div class='lightGallery-captions'><h3 class='text-uppercase'>design</h3><p>Lorem ipsum dolor sit amet consectetur.</p></div>">
+          <a href="images/images-grid/img-17.jpg">
+            　<img src="images/images-grid/img-17-thumb.jpg" class="img-fluid  rounded" alt="img-17" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <section class="footer pt-5 mt-5" id="footer">
+    <div class="container">
+      <div class="news-box offset-lg-6 offset-md-4 offset-sm-2 offset-0 p-5">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Subscribe our News letter</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+          </div>
+          <a href="#" class="btn mt-0">Subscribe</a>
+        </form>
+      </div>
+      <div class="row py-5">
+        <div class="col-lg-4 col-md-6 col-12 about-footer">
+          <h2 class="text-uppercase">About company</h2>
+          <p class="mt-5">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis,
+            nihil?</p>
+          <div class="location d-flex justify-content-start align-items-center flex-wrap mb-3">
+            <i class="fa fa-map-marker-alt"></i>
+            <p class="ml-3 m-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          <div class="email d-flex justify-content-start align-items-center flex-wrap mb-3">
+            <i class="fas fa-envelope"></i>
+            <p class=" ml-3 m-0">abc123@gmail.com</p>
+          </div>
+          <div class="contact d-flex justify-content-start align-items-center flex-wrap mb-3">
+            <i class="fas fa-phone-alt"></i>
+            <p class=" ml-3 m-0">+23 45789512</p>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-6  col-12 footer-content">
+          <ul class="footer-nav m-0">
+            <li>Web Design</li>
+            <li>html</li>
+            <li>Web Design</li>
+            <li>css3</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+            <li>css3</li>
+            <li>Jquery</li>
+          </ul>
+          <ul class="footer-nav m-0">
+            <li>Web Design</li>
+            <li>html</li>
+            <li>Web Design</li>
+            <li>css3</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+          </ul>
+          <ul class="footer-nav m-0">
+            <li>Web Design</li>
+            <li>html</li>
+            <li>Web Design</li>
+            <li>css3</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+            <li>css3</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+          </ul>
+          <ul class="footer-nav m-0">
+            <li>Web Design</li>
+            <li>html</li>
+            <li>Jquery</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-12 d-flex justify-content-center align-items-center flex-column">
+        <div class="social-icons d-flex justify-content-center flex-wrap">
+          <div class="icon d-flex justify-content-center align-items-center my-2">
+            <i class="fab fa-facebook-f"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-twitter"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-pinterest-p"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-dribbble"></i>
+          </div>
+          <div class="icon d-flex justify-content-center align-items-center  my-2">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </div>
+        <div class="copywrite my-3">
+          <p>Copyright ©
+            <script>document.write(new Date().getFullYear())</script> All rights reserved
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- end footer -->
+  <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-thumbnail/1.1.0/lg-thumbnail.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-fullscreen/1.1.0/lg-fullscreen.min.js"></script> -->
+  <script>
+    $(document).ready(function () {
+      $("#lightgallery").lightGallery({
+        download: false
+      });
+      var $grid = $('#lightgallery').isotope({
+      });
+      var $gallery = $('#lightgallery');
+      $('.nav').on('click', 'a', function () {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        $gallery.data('lightGallery').destroy(true);
+        $gallery.lightGallery({
+          selector: filterValue.replace('*', ''),
+          download: false
+        });
+        $('.nav a').removeClass('active');
+        $(this).addClass('active');
+      });
+    });
+  </script>
+</body>
+
+</html>

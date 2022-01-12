@@ -1,0 +1,54 @@
+
+// portfolio section
+.image-gallary{
+    .col-lg-4,.col-md-4{
+        padding-left:12px!important;
+        padding-right:12px!important;
+        // padding-bottom: 24px !important;
+    }
+    .nav{
+        .nav-link{
+            color:$customBlack;
+            border: 2px solid $main-color;
+            border-radius: 5px;
+            margin-bottom: 0.5rem;
+        }
+        .nav-link:not(:last-child) {
+            margin-right:1rem;
+        }
+        .nav-link.active{
+            background-color: $main-color;
+        }
+    }
+}
+.lg-actions{
+    .lg-prev{
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        &::after{
+            content: "\f104";
+        }
+    }
+    .lg-next{
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        &::before{
+            content: "\f105";
+        }
+    }
+}
+.lightGallery-captions{
+    p{
+        font-size: 1.2rem;
+    }
+}
+.lg-toolbar {
+    .lg-icon{
+        color: $customWhite !important;
+        font-weight: 900;
+    }
+}
+.lg-backdrop{
+    background-color: rgba(0,0,0,0.9);
+  }
+

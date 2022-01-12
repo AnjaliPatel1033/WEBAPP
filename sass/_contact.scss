@@ -1,0 +1,455 @@
+.contactform{
+    .btn{
+        background-color: $main-color;
+    }
+    .form-control{
+        padding: 0.75rem;
+    }
+    ::placeholder{
+        font-size: 1rem;
+        opacity: 0.3;
+    }
+}
+.contactcard{
+    min-height: 500px;
+    .box{
+        cursor: pointer;
+        border-radius: 5px;
+        .icon{
+            font-size: 1.5rem;
+            color: $main-color;
+        }
+        h3{
+            font-weight: bold;
+        }
+        &:hover{
+            box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+        }
+      
+    }
+}
+
+.review{
+    // min-height: 500px;
+    background-color: #fbfcff;
+    .custom-shape-divider-bottom-1630922687 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+    }
+    
+    .custom-shape-divider-bottom-1630922687 svg {
+        position: relative;
+        display: block;
+        width: calc(138% + 1.3px);
+        height: 141px;
+    }
+    
+    .custom-shape-divider-bottom-1630922687 .shape-fill {
+        fill:#fbfcff;
+    }
+    .star-rating{
+        h3{
+            font-size:2rem;
+            font-weight: bold;
+        }
+            .title-name{
+                font-size: 1.2rem;
+                font-weight:bold;
+            }
+            .reiewbtn{
+                @extend %btn-Grp;
+                @include btnGroup(transparent);
+                border: 1px solid $main-color;
+                @include btnbefore;
+                @include themebackground-font-color($main-color:true);
+                &:hover{
+                    color:$customBlack;
+                }
+            }
+        
+    .stars{
+        display: inline-block;
+       input{
+           display: none;
+           &:checked ~ label{
+               color: $main-color;
+               opacity: 1;
+               cursor: pointer;
+           }
+       }
+       label{
+           float: right;
+           font-size: 50px;
+           margin: 0 5px;
+           cursor: pointer;
+           &:before{
+               content: '\2605';
+               // font-family:'Font Awesome 5 Free';
+               // content:"\f005";
+               opacity: 0.5;
+               cursor: pointer;
+             }
+         }
+   }
+   &:not(:checked){
+       label{
+           &:hover,&:hover ~ label{
+               color:$main-color;
+               opacity: 1;
+               cursor: pointer;
+           }
+       }   
+   }
+   .feedbackbutton{
+    margin: 0 auto;
+    a{
+        // display: block;
+        border: 2px solid $blue;
+        border-radius:10px;
+        padding: 1rem 2rem;
+        color: $customBlack;
+        font-weight: map-get($map: $font-weights, $key:'bold' );
+        font-size: 1.2rem;
+        transition: all 0.5s ease-in-out;
+        outline: none;
+        &:hover{
+            transform:translateY(-10px);
+            box-shadow: 0 0 10px rgba(133, 132, 132, 0.5);
+        }
+    }
+}
+.social-icons{
+    .icon{
+        color: $main-color;
+        font-size: 1.5rem;
+        transition: all 0.3s ease-out;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+    }    
+}
+.copywrite{
+    background-color: $customBlack;
+    color: $customWhite;
+    p{
+        opacity: 0.3;
+    }
+}
+
+.feedbackForm{
+    position:fixed;
+    overflow-y: scroll;
+    width: 100%;
+    height:auto;
+    background-color: rgba(77, 77, 77, 0.8);
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index:999;
+        .feedback-box{
+        height: 100%;
+        max-width: 700px;
+        //max-height:870px;
+        //overflow-y: auto;
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+        background-color:#fff;
+        border-radius:8px;
+        position:relative;
+        box-shadow: 0 0px 4px rgb(246, 245, 245);
+            .close{
+                position: absolute;
+                top: 15px;
+                right: 25px;
+                color: $customBlack;
+            }
+            .title{
+                font-weight: map-get($map: $font-weights, $key:'bold' );
+                font-size: 1.2rem;
+                color: $blue;
+            }
+            .ques{
+               
+                font-weight: map-get($map: $font-weights, $key:'bold' );
+            }
+            label{
+                font-weight: map-get($map: $font-weights, $key:'bold' );
+            }
+            .question1{
+                input[type="radio"] {
+                    display: none;
+                  }
+                  img{
+                    display: inline-block;
+                    cursor: pointer;
+                    opacity: 0.2;
+                    transition: all 0.3s linear;
+                    margin: 0 1rem 0 0;
+                    @media only screen and (max-width: 542px) {
+                                height:32px;
+                                width: 32px;
+                                margin:0 0.2rem 0 0;
+                       }
+                    }
+            
+            input[class="like"]{
+                &:hover + img,&:checked + img{
+                     opacity: 1;
+                     cursor: pointer;
+                    
+                }
+            }
+            input[class="dontlike"]{
+                &:hover + img,&:checked + img{
+                     opacity: 1;
+                     cursor: pointer;
+                    
+                }
+            }
+            input[class="normal"]{
+                &:hover + img,&:checked + img{
+                     opacity: 1;
+                     cursor: pointer;
+                    
+                }
+            }
+            input[class="hate"]{
+                &:hover + img,&:checked + img{
+                     opacity: 1;
+                     cursor: pointer;
+                    
+                }
+            }
+            input[class="satisfied"]{
+                &:hover + img,&:checked + img{
+                     opacity: 1;
+                     cursor: pointer;
+                }
+            }
+            }
+            .question2{
+                input[type="radio"] {
+                    display: none;
+                    &:checked ~ label{
+                        background:$main-color;
+                    }
+                  }
+                label{
+                    position:relative;
+                    height:40px;
+                    width: calc(20% - 7px);
+                    border: 1px solid $main-color;
+                    cursor: pointer;
+                    transition: all 0.3s linear;
+                    &:hover{
+                        background-color: $main-color;
+                    }
+                 &::before{
+                    content:attr(value);
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+                    z-index:1;
+                    cursor: pointer;
+                 }
+                }
+            }
+            #submit{
+                @extend %btn-Grp;
+                @include btnGroup($main-color);
+                @include themebackground-font-color($main-color:true);
+            }
+            &::-webkit-scrollbar {
+                background:transparent;
+                width:5px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color:rgb(200, 200, 200);
+                border-radius: 8px;
+                height: 50px;
+            }
+        }  
+
+        
+}
+
+
+.ajs-header{
+    display:none;
+}
+.alertify .ajs-dialog{
+    background-color:#fff;
+    color: #051b2c;
+    border-radius: 10px;
+}
+
+.alertify .ajs-footer{
+    background-color:#fff;
+    border-top: 0;
+    padding-top: 0;
+    border-radius: 10px;
+}
+.alertify .ajs-body{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+// click outside
+
+// .feedbackForm{
+//     display: none;
+//     .popupOverlay{
+//         position:fixed;
+//         overflow-y: scroll;
+//         width: 100%;
+//         height:auto;
+//         z-index: 9999;
+//         background-color: rgba(77, 77, 77, 0.8);
+//         top: 0;
+//         bottom: 0;
+        
+//     }
+//         .feedback-box{
+//             height: 100%;
+//             z-index: 99999;
+//             max-width: 700px;
+//             //max-height:870px;
+//             //overflow-y: auto;
+//             width: 100%;
+//             margin: 0 auto;
+//             background-color:#fff;
+//             border-radius:8px;
+//             position:absolute;
+//             left: 50%;
+//             top:50%;
+//             transform: translate(-50%,-50%);
+//             box-shadow: 0 0px 4px rgb(246, 245, 245);
+//             .close{
+//                 position: absolute;
+//                 top: 15px;
+//                 right: 25px;
+//                 color: $customBlack;
+//             }
+//             .title{
+//                 font-weight: map-get($map: $font-weights, $key:'bold' );
+//                 font-size: 1.2rem;
+//                 color: $blue;
+//             }
+//             .ques{
+               
+//                 font-weight: map-get($map: $font-weights, $key:'bold' );
+//             }
+//             label{
+//                 font-weight: map-get($map: $font-weights, $key:'bold' );
+//             }
+//             .question1{
+//                 input[type="radio"] {
+//                     display: none;
+//                   }
+//                   img{
+//                     display: inline-block;
+//                     cursor: pointer;
+//                     opacity: 0.2;
+//                     transition: all 0.3s linear;
+//                     margin: 0 1rem 0 0;
+//                     @media only screen and (max-width: 542px) {
+//                                 height:32px;
+//                                 width: 32px;
+//                                 margin:0 0.2rem 0 0;
+//                        }
+//                     }
+            
+//             input[class="like"]{
+//                 &:hover + img,&:checked + img{
+//                      opacity: 1;
+//                      cursor: pointer;
+                    
+//                 }
+//             }
+//             input[class="dontlike"]{
+//                 &:hover + img,&:checked + img{
+//                      opacity: 1;
+//                      cursor: pointer;
+                    
+//                 }
+//             }
+//             input[class="normal"]{
+//                 &:hover + img,&:checked + img{
+//                      opacity: 1;
+//                      cursor: pointer;
+                    
+//                 }
+//             }
+//             input[class="hate"]{
+//                 &:hover + img,&:checked + img{
+//                      opacity: 1;
+//                      cursor: pointer;
+                    
+//                 }
+//             }
+//             input[class="satisfied"]{
+//                 &:hover + img,&:checked + img{
+//                      opacity: 1;
+//                      cursor: pointer;
+//                 }
+//             }
+//             }
+//             .question2{
+//                 input[type="radio"] {
+//                     display: none;
+//                     &:checked ~ label{
+//                         background:$main-color;
+//                     }
+//                   }
+//                 label{
+//                     position:relative;
+//                     height:40px;
+//                     width: calc(20% - 7px);
+//                     border: 1px solid $main-color;
+//                     cursor: pointer;
+//                     transition: all 0.3s linear;
+//                     &:hover{
+//                         background-color: $main-color;
+//                     }
+//                  &::before{
+//                     content:attr(value);
+//                     position: absolute;
+//                     text-align: center;
+//                     top: 50%;
+//                     transform: translateY(-50%);
+//                     width: 100%;
+//                     z-index:1;
+//                     cursor: pointer;
+//                  }
+//                 }
+//             }
+//             #submit{
+//                 @extend %btn-Grp;
+//                 @include btnGroup($main-color);
+//                 @include themebackground-font-color($main-color:true);
+//             }
+//             &::-webkit-scrollbar {
+//                 background:transparent;
+//                 width:5px;
+//             }
+//             &::-webkit-scrollbar-thumb {
+//                 background-color:rgb(200, 200, 200);
+//                 border-radius: 8px;
+//                 height: 50px;
+//             }
+//         }  
+
+        
+// }
+
